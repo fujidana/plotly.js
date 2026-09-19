@@ -31,6 +31,8 @@ export interface ToImgopts {
     height: number | null;
     /** Resolution multiplier for raster formats. */
     scale?: number | undefined;
+    /** Determines whether or not the return value is prefixed by the image format's corresponding 'data:image;' spec. */
+    imageDataOnly?: boolean;
 }
 
 /**
