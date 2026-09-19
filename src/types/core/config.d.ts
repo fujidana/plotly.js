@@ -24,7 +24,7 @@ export type { Edits };
  */
 export interface ToImgopts {
     /** Output image format. */
-    format: 'jpeg' | 'png' | 'webp' | 'svg';
+    format: 'jpeg' | 'png' | 'webp' | 'svg' | 'full-json';
     /** If null, uses current graph width */
     width: number | null;
     /** If null, uses current graph height */
@@ -39,7 +39,7 @@ export interface ToImgopts {
  */
 export interface DownloadImgopts {
     /** Output image format. */
-    format: 'jpeg' | 'png' | 'webp' | 'svg';
+    format: 'jpeg' | 'png' | 'webp' | 'svg' | 'full-json';
     /** Output width in pixels. */
     width: number | null;
     /** Output height in pixels. */
@@ -54,7 +54,7 @@ export interface DownloadImgopts {
  */
 export interface ToImageButtonOptions {
     /** Output image format. */
-    format?: 'png' | 'svg' | 'jpeg' | 'webp';
+    format?: 'png' | 'svg' | 'jpeg' | 'webp' | 'full-json';
     /** Downloaded filename. */
     filename?: string;
     /** Output height in pixels. */
